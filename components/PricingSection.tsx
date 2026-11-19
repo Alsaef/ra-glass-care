@@ -185,6 +185,8 @@ export default function PricingSection() {
 
                   <a
                     href={planEmailUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full py-2.5 px-4 rounded-xl text-xs font-semibold text-center text-slate-300 hover:text-white bg-white/5 hover:bg-white/10 border border-white/10 hover:border-slate-600 transition-colors flex items-center justify-center gap-1.5"
                   >
                     <Mail className="w-3.5 h-3.5 text-amber-400" />

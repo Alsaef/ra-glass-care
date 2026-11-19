@@ -152,6 +152,8 @@ export default function FounderBrandStory() {
                 href={getEmailMailtoUrl("General Inquiry", {
                   notes: "Reaching out to Rudro regarding storefront window cleaning service.",
                 })}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-xs text-slate-300 hover:text-amber-400 transition-colors underline underline-offset-4"
               >
                 <Mail className="w-3.5 h-3.5 text-amber-400" />

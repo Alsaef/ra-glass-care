@@ -56,7 +56,7 @@ export function getWhatsAppUrl(
 }
 
 /**
- * Builds pre-filled Email mailto link
+ * Builds pre-filled Google Gmail Compose link (opens in browser tab without OS mail reader error)
  */
 export function getEmailMailtoUrl(
   serviceOrPlanName?: string,
@@ -66,6 +66,7 @@ export function getEmailMailtoUrl(
     schedule?: string;
     businessName?: string;
     notes?: string;
+    useStandardMailto?: boolean;
   }
 ): string {
   const plan = serviceOrPlanName || "Storefront Window Cleaning";
@@ -86,7 +87,12 @@ export function getEmailMailtoUrl(
     `Best regards,`,
   ].join("\n");
 
-  return `mailto:${BUSINESS_INFO.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  if (details?.useStandardMailto) {
+    return `mailto:${BUSINESS_INFO.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  }
+
+  // Opens directly in Google Gmail web compose in a browser tab:
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${BUSINESS_INFO.email}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
 /**

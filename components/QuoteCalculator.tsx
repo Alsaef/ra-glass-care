@@ -376,6 +376,8 @@ export default function QuoteCalculator() {
 
                 <a
                   href={emailUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full py-3 px-4 rounded-xl text-xs font-semibold text-slate-200 bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-amber-400/40 flex items-center justify-center gap-2 transition-colors"
                 >
                   <Mail className="w-4 h-4 text-amber-400" />

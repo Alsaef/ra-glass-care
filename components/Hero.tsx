@@ -111,6 +111,8 @@ export default function Hero() {
               {/* Email Request Button */}
               <a
                 href={getEmailMailtoUrl("Storefront Window Cleaning")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl text-sm sm:text-base font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800/90 border border-amber-400/30 hover:border-amber-400 text-slate-100 shadow-lg shadow-black/40 transition-all duration-300 hover:scale-[1.02]"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0" />

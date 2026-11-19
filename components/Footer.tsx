@@ -138,6 +138,8 @@ export default function Footer() {
               <li>
                 <a
                   href={getEmailMailtoUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2.5 text-slate-300 hover:text-white transition-colors"
                 >
                   <Mail className="w-4 h-4 text-amber-400 shrink-0" />

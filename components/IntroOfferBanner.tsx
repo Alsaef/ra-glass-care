@@ -72,6 +72,8 @@ export default function IntroOfferBanner() {
 
               <a
                 href={offerEmailUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-200 bg-white/5 hover:bg-white/10 border border-white/15 hover:border-amber-400/50 transition-colors"
               >
                 <Mail className="w-4 h-4 text-amber-400" />

@@ -64,6 +64,8 @@ export default function CallToActionBanner() {
 
             <a
               href={getEmailMailtoUrl("Storefront Window Cleaning Quote")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl font-semibold text-base text-slate-100 bg-slate-900/90 hover:bg-slate-800 border border-amber-400/30 hover:border-amber-400 transition-colors"
             >
               <Mail className="w-5 h-5 text-amber-400" />
